@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from typing import Any, Self
+from typing import Any
 
 
 class Plant:

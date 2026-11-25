@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# from typing import Any, Self
 
 
 class Plant:
@@ -12,15 +11,11 @@ class Plant:
         self.stat = self.Statistics()
 
     @classmethod
-    def anonymous(cls, **kwargs: Any) -> "Plant":
+    def anonymous(cls) -> "Plant":
         """ set default values so that an object can be created with
         incomplete parameters
         """
-        name = kwargs.get("name", "Unknown plant")
-        height = kwargs.get("height", 0.0)
-        age = kwargs.get("age", 0)
-        health = kwargs.get("health", 50)
-        return (cls(name, height, age, health))
+        return (cls("Unknown plant", 0.0, 0, 50))
 
     def show(self) -> None:
         """ Print infos about the plant """

@@ -84,7 +84,7 @@ class Plant:
         """ Stores stats about how many time show, grow, age
             and shade methods were called
         """
-        def __init__(self):
+        def __init__(self) -> None:
             """ Instantiate the object "Statistics" with all values to 0"""
             self.__show = 0
             self.__grow = 0
